@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/Venkatvicky/nexus-final.git
     targetRevision: main
-    path: nexus-os-main/nexus-os-main
+    path: nexus-os-main/nexus-os-main/nexus-oss
   destination:
     server: https://kubernetes.default.svc
     namespace: nexus
