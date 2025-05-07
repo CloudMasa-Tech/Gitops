@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ghosh-blog
+  name: vault
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/Thiru152003/ghost-blog.git
-    targetRevision: master
-    path: ghost-blog
+    repoURL: 
+    targetRevision: 
+    path: 
   destination:
     server: https://kubernetes.default.svc
-    namespace: ghost-blog
+    namespace: vault
   syncPolicy:
     automated:
       prune: true
