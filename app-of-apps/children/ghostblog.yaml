@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: wordpress
+  name: ghoshblog
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/Thiru152003/wordpress.git
+    repoURL: https://github.com/Thiru152003/blog.git
     targetRevision: HEAD
-    path: wordpress
+    path: ghost-blog
   destination:
     server: https://kubernetes.default.svc
-    namespace: wordpress
+    namespace: ghost-blog
   syncPolicy:
     automated:
       prune: true
