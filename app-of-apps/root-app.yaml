@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/karthick004/argocd-chart.git
+    repoURL: https://github.com/CloudMasa-Tech/Gitops.git
     targetRevision: HEAD
     path: app-of-apps/children
   destination:
