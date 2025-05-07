@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nexus
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Venkatvicky/nexus-final.git
+    targetRevision: main
+    path: nexus-os-main/nexus-os-main
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: nexus
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
