@@ -6,8 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Thiru152003/blog.git
-    targetRevision: HEAD
+    repoURL: https://github.com/Thiru152003/ghost-blog.git
+    targetRevision: master
     path: ghost-blog
   destination:
     server: https://kubernetes.default.svc
